@@ -1,2 +1,2 @@
-# FPGA_Pomodoro
+# FPGA_pomodoro
  
