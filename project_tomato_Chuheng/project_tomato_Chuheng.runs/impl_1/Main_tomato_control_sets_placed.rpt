@@ -1,0 +1,207 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec  1 16:38:44 2021
+| Host         : DESKTOP-18PPVG9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Main_tomato_control_sets_placed.rpt
+| Design       : Main_tomato
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   138 |
+| Unused register locations in slices containing registers |   880 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |          118 |
+|      2 |            2 |
+|      3 |            2 |
+|      4 |            3 |
+|      6 |            5 |
+|    16+ |            8 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            7 |
+| No           | No                    | Yes                    |             165 |           77 |
+| No           | Yes                   | No                     |              37 |           37 |
+| Yes          | No                    | No                     |              68 |           43 |
+| Yes          | No                    | Yes                    |              92 |           65 |
+| Yes          | Yes                   | No                     |               6 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+------------------------+-------------------------+------------------+----------------+
+|        Clock Signal       |      Enable Signal     |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
++---------------------------+------------------------+-------------------------+------------------+----------------+
+|  ncnt1_set/xn_reg[0]_C_1  |                        | ncnt1_set/xn_reg[0]_C_0 |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt1_60/xn_reg[1]_2    |                1 |              1 |
+|  ncnt2_60/borrow2         |                        | ncnt_5/finish_del0      |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt1_60/xn_reg[2]_0    |                1 |              1 |
+|  m1_ztj/load_reg_3        |                        | m1_ztj/load_reg_8       |                1 |              1 |
+|  m1_ztj/load_reg_1        |                        | m1_ztj/load_reg_6       |                1 |              1 |
+|  m1_ztj/load_reg_4        |                        | m1_ztj/load_reg_9       |                1 |              1 |
+|  m1_ztj/load_reg_0        |                        | m1_ztj/load_reg_5       |                1 |              1 |
+|  m1_ztj/load_reg_2        |                        | m1_ztj/load_reg_7       |                1 |              1 |
+|  mod_c/enmod_reg_26       |                        | mod_c/enmod_reg_27      |                1 |              1 |
+|  mod_c/enmod_reg_2        |                        | mod_c/enmod_reg_3       |                1 |              1 |
+|  mod_c/enmod_reg_4        |                        | mod_c/enmod_reg_5       |                1 |              1 |
+|  mod_c/enmod_reg_10       |                        | mod_c/enmod_reg_11      |                1 |              1 |
+|  mod_c/enmod_reg_6        |                        | mod_c/enmod_reg_7       |                1 |              1 |
+|  mod_c/enmod_reg_20       |                        | mod_c/enmod_reg_21      |                1 |              1 |
+|  mod_c/enmod_reg_12       |                        | mod_c/enmod_reg_13      |                1 |              1 |
+|  mod_c/enmod_reg_22       |                        | mod_c/enmod_reg_23      |                1 |              1 |
+|  mod_c/enmod_reg_18       |                        | mod_c/enmod_reg_19      |                1 |              1 |
+|  mod_c/enmod_reg_28       |                        | mod_c/enmod_reg_29      |                1 |              1 |
+|  mod_c/enmod_reg_30       |                        | mod_c/enmod_reg_31      |                1 |              1 |
+|  mod_c/enmod_reg_14       |                        | mod_c/enmod_reg_15      |                1 |              1 |
+|  mod_c/enmod_reg_0        |                        | mod_c/enmod_reg_1       |                1 |              1 |
+|  mod_c/enmod_reg_24       |                        | mod_c/enmod_reg_25      |                1 |              1 |
+|  mod_c/enmod_reg_8        |                        | mod_c/enmod_reg_9       |                1 |              1 |
+|  mod_c/enmod_reg_16       |                        | mod_c/enmod_reg_17      |                1 |              1 |
+|  ncnt1_set/enmod_reg      |                        | ncnt1_set/enmod_reg_0   |                1 |              1 |
+|  ncnt1_set/enmod_reg_1    |                        | ncnt1_set/enmod_reg_2   |                1 |              1 |
+|  ncnt1_set/enmod_reg_3    |                        | ncnt1_set/enmod_reg_4   |                1 |              1 |
+|  ncnt2_60/xn_reg[2]_0     |                        | ncnt2_60/xn_reg[2]_1    |                1 |              1 |
+|  ncnt2_60/xn_reg[0]_0     |                        | ncnt2_60/xn_reg[0]_1    |                1 |              1 |
+|  ncnt2_60/xn_reg[3]_2     |                        | ncnt2_60/xn_reg[3]_3    |                1 |              1 |
+|  ncnt2_60/xn_reg[4]_0     |                        | ncnt2_60/xn_reg[4]_1    |                1 |              1 |
+|  ncnt_5/sign_xn_reg[0]_1  |                        | ncnt_5/sign_xn_reg[0]_0 |                1 |              1 |
+|  ncnt_5/sign_xn_reg[2]_0  |                        | ncnt_5/sign_xn_reg[2]_1 |                1 |              1 |
+|  ncnt_5/sign_xn_reg[2]_2  |                        | ncnt_5/sign_xn_reg[2]_3 |                1 |              1 |
+|  ncnt_5/sign_xn_reg[3]_4  |                        | ncnt_5/sign_xn_reg[3]_5 |                1 |              1 |
+|  ncnt1_60/borrow1         |                        | m1_ztj/load_reg_5       |                1 |              1 |
+|  ncnt1_60/borrow1         |                        | m1_ztj/load_reg_9       |                1 |              1 |
+|  ncnt1_60/borrow1         |                        | m1_ztj/load_reg_6       |                1 |              1 |
+|  ncnt1_60/borrow1         |                        | m1_ztj/load_reg_7       |                1 |              1 |
+|  ncnt1_60/borrow1         |                        | m1_ztj/load_reg_8       |                1 |              1 |
+|  ncnt1_60/borrow1         | m1_ztj/xn0             | m1_ztj/load_reg_3       |                1 |              1 |
+|  ncnt1_60/borrow1         | m1_ztj/xn0             | m1_ztj/load_reg_1       |                1 |              1 |
+|  ncnt1_60/borrow1         | m1_ztj/xn0             | m1_ztj/load_reg_4       |                1 |              1 |
+|  ncnt1_60/borrow1         | m1_ztj/xn0             | m1_ztj/load_reg_0       |                1 |              1 |
+|  ncnt1_60/borrow1         | m1_ztj/xn0             | m1_ztj/load_reg_2       |                1 |              1 |
+|  ncnt1_60/xn_reg[0]_1     |                        | ncnt1_60/xn_reg[0]_0    |                1 |              1 |
+|  ncnt1_60/xn_reg[1]_2     |                        | ncnt1_60/xn_reg[1]_3    |                1 |              1 |
+|  ncnt1_60/xn_reg[2]_0     |                        | ncnt1_60/xn_reg[2]_1    |                1 |              1 |
+|  ncnt1_60/xn_reg[4]_5     |                        | ncnt1_60/xn_reg[4]_6    |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt1_60/xn_reg[4]_5    |                1 |              1 |
+|  clk_IBUF_BUFG            | bt1/delay_cnt_reg_n_0  | mod_c/rstmod            |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_27      |                1 |              1 |
+|  clk_IBUF_BUFG            | bt2/delay_cnt_reg_n_0  | mod_c/rstmod            |                1 |              1 |
+|  driver_sec_po/sec_pulse2 |                        |                         |                1 |              1 |
+|  clk_IBUF_BUFG            | bt3/delay_cnt_reg_n_0  | mod_c/rstmod            |                1 |              1 |
+|  clk_IBUF_BUFG            | bt4/delay_cnt_reg_n_0  | mod_c/rstmod            |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt1_set/xn_reg[0]_C_0 |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_13      |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_31      |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_11      |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_17      |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_23      |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_15      |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_1       |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_19      |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_25      |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_5       |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_3       |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt1_60/xn_reg[0]_0    |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_7       |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_9       |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_21      |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_c/enmod_reg_29      |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt1_set/enmod_reg_2   |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt1_set/enmod_reg_4   |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt1_set/enmod_reg_0   |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt2_60/xn_reg[4]_1    |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt2_60/xn_reg[2]_1    |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt2_60/xn_reg[3]_3    |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt2_60/xn_reg[0]_1    |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt_5/sign_xn_reg[0]_0 |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt_5/sign_xn_reg[2]_1 |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt_5/sign_xn_reg[2]_3 |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt_5/sign_xn_reg[3]_5 |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt1_60/xn_reg[1]_3    |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt1_60/xn_reg[4]_6    |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | ncnt1_60/xn_reg[2]_1    |                1 |              1 |
+|  clk_IBUF_BUFG            |                        | mod_con_IBUF            |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt1_set/xn_reg[0]_C_1 |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_26      |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_2       |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_4       |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_10      |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_6       |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_20      |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_12      |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_22      |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_18      |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_28      |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_30      |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_14      |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_0       |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_24      |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_8       |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | mod_c/enmod_reg_16      |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt1_set/enmod_reg     |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt1_set/enmod_reg_1   |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt1_set/enmod_reg_3   |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt2_60/xn_reg[2]_0    |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt2_60/xn_reg[0]_0    |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt2_60/xn_reg[3]_2    |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt2_60/xn_reg[4]_0    |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt_5/sign_xn_reg[0]_1 |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt_5/sign_xn_reg[2]_0 |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt_5/sign_xn_reg[2]_2 |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt_5/sign_xn_reg[3]_4 |                1 |              1 |
+|  clk_IBUF_BUFG            | mod_c/enable_mod       | ncnt1_60/xn_reg[0]_1    |                1 |              1 |
+|  driver_sec/sec_pulse     |                        |                         |                2 |              2 |
+|  clk_IBUF_BUFG            |                        |                         |                2 |              2 |
+|  ncnt2_60/borrow2         |                        |                         |                2 |              3 |
+|  clk_IBUF_BUFG            | dt3/E[0]               | m2_ztj/cnt_en_reg_1     |                2 |              3 |
+|  ncnt2_60/borrow2         | m1_ztj/E[0]            | m1_ztj/SR[0]            |                1 |              4 |
+|  clk_IBUF_BUFG            | dt4/set_n              |                         |                2 |              4 |
+|  clk_IBUF_BUFG            | dt3/sig_reg1_reg_0     | m2_ztj/cnt_en_reg_1     |                1 |              4 |
+|  pcnt1_60/CLK             | m2_ztj/cnt_en_reg_0[0] | m2_ztj/cnt_en_reg_1     |                2 |              6 |
+|  driver_sec/sec_pulse     | m1_ztj/E[0]            | m1_ztj/SR[0]            |                2 |              6 |
+|  driver_sec_po/sec_pulse2 | m2_ztj/E[0]            | mod_con2_IBUF           |                4 |              6 |
+|  driver_sec/sec_pulse     | m1_ztj/cnt_en_reg_0[0] | mod_con1_IBUF           |                2 |              6 |
+|  clk_IBUF_BUFG            | dt4/set_n              | mod_con2_IBUF           |                3 |              6 |
+|  clk_IBUF_BUFG            | m2_ztj/k_reg[0][0]     |                         |               13 |             16 |
+|  clk_IBUF_BUFG            | m2_ztj/k_reg[1][0]     |                         |               11 |             16 |
+|  clk_IBUF_BUFG            | dt3/sig_reg0_reg_0[0]  | m2_ztj/cnt_en_reg_1     |                9 |             16 |
+|  clk_IBUF_BUFG            | r_p/cut1[3][7]_i_1_n_0 |                         |                9 |             16 |
+|  clk_IBUF_BUFG            | r_p/cut1[2][7]_i_1_n_0 |                         |                8 |             16 |
+|  clk_IBUF_BUFG            |                        | mod_con2_IBUF           |                8 |             32 |
+|  clk_IBUF_BUFG            |                        | mod_con1_IBUF           |                9 |             36 |
+|  clk_IBUF_BUFG            |                        | mod_c/rstmod            |               21 |             58 |
++---------------------------+------------------------+-------------------------+------------------+----------------+
+
+
